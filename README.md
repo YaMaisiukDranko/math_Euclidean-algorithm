@@ -1,1 +1,1 @@
-# math_Evklid-algorithm
+# math_Euclid-algorithm

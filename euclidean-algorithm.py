@@ -1,15 +1,14 @@
 # @YaMaisiukDranko
 # Euclidean Algorithm on Python
 
-gcd = int
-# Get a, b
-a = int(input("Write a: "))
-b = int(input("Write b: "))
-print("GCD (", a, ";", b, ")")
+a = int(input("What's the first number? "))
+b = int(input("What's the second number? "))
 
-if a % b != 0:  # Check for 0
-    while a % b != 0:
-        print(a % b)
+r=a%b
 
-else:
-    print(a / b)
+while r:
+    a=b
+    b=r
+    r=a%b
+    print("a:", a, "b:", b, "r:", r)
+print('GCD is:', b)

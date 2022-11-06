@@ -7,7 +7,9 @@ a = int(input("Write a: "))
 b = int(input("Write b: "))
 print("GCD (", a, ";", b, ")")
 
-if a % b != 0: #Check for 0
-    print(a % b)
+if a % b != 0:  # Check for 0
+    while a % b != 0:
+        print(a % b)
+
 else:
     print(a / b)
